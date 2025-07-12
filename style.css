@@ -1,76 +1,206 @@
+/* *(od)temdeg ni html fail buheldn command uguh */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
 body {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  background-color: #1b1b32;
-  color: #f5f6f7;
-  font-family: Tahoma;
-  font-size: 16px;
+    background-color: whitesmoke;
+    padding-top: 2.5rem;
+}
+nav {
+    background-color: #274C8E;
+    position: fixed;
+    width: 100%;
+    padding: 1rem 2rem;
+    /* nav scrolloor deesh doosh guilgehed hudluhgu bhaar   */
+    z-index: 100;
+    height: 2.5rem;
+
+}
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    /* listiig hoish n shahah */
+    justify-content: flex-end; 
+    margin-top: 0.5rem;
 }
 
-h1, p {
-  margin: 1em auto;
-  text-align: center;
+nav a {
+    color: white;
+    /* link helberreer bichigdsen zuiliin zuraasiig arilgah */
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+nav a:hover{
+    color: #ffd782;
 }
 
-form {
-  width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
-  margin: 0 auto;
-  padding-bottom: 2em;
+#hero{
+    background: url(https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG6CX7bFaQ6O-4GUHsIE4EGz-8_edaQr21_R9ULsol25T-MFOtIGYxKhdmu4rtJnQ3jaMZtAeCQLwKWig3WtZ_-UACNkBd_ry9bmG3M5MOZPHXCDwV7ML5M2T-p2_51RZkmBhm9oieeM5_o1f0ZPBSoyUpt2dCTfHWMc5xAUzWJymDAxAhfycq9dQug1NHKqfC6kGRCNL3a6kgsmDDRgR5IanO7MRPSrWDS4foJqdin70/3083f9040144964313d24235c8d4debe.jpg?errorImage=false) ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-fieldset {
-  border: none;
-  padding: 2rem 0;
-  border-bottom: 3px solid #3b3b4f;
+.hero-content{
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
 }
 
-fieldset:last-of-type {
-  border-bottom: none;
+.hero-content h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
 }
 
-label {
-  display: block;
-  margin: 0.5rem 0;
+.hero-content p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-input,
-textarea,
-select {
-  margin: 10px 0 0 0;
-  width: 100%;
-  min-height: 2em;
+.delgerengui-tovch{
+    background-color: #ffd782;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0rem 1rem;
+    margin: 1rem;
+    border-radius: 45px;
+    color:#1e3c63 ;
+}
+section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-input, textarea {
-  background-color: #0a0a23;
-  border: 1px solid #0a0a23;
-  color: #ffffff;
+section h2{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #274C8E;
+    margin-top: 2rem;
 }
 
-.inline {
-  width: unset;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
+.about-content{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-input[type="submit"] {
-  display: block;
-  width: 60%;
-  margin: 1em auto;
-  height: 2em;
-  font-size: 1.1rem;
-  background-color: #3b3b4f;
-  border-color: white;
-  min-width: 300px;
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-input[type="file"] {
-  padding: 1px 2px;
+#about p {
+    line-height: 1.8;
+    font-size: 1.2rem;
 }
 
-label a {
-  color:#dfdfe2;
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 1.5rem;
+}
+
+.skill-grid{
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-grid:hover{
+    transform: translate(-5px);}
+
+.skill-grid h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color:#274C8E
+}
+
+.skill-grid p{
+    font-size: 1rem;
+    color: grey;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 1.5rem;
+}
+
+.project-grid{
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;}
+
+.project-grid:hover{
+    transform: translate(-5px);}
+
+.project-grid h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color:#274C8E
+}
+
+.project-grid p{
+    font-size: 1rem;
+    color: gray;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact input, #contact textarea {
+    padding: 0.75rem;
+    border:1px,solid,whitesmoke;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact button{
+    background: #274C8E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem;
+    transition: transform 0.3s ease;}
+
+
+#contact button:hover{
+    background: #1e3c72;
+}
+
+footer {
+    background-color: #274C8E;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
 }
