@@ -28,7 +28,7 @@ body.dark-mode nav{ background:#111; }
 /* Hero (full screen background) */
 #hero{
   position:relative;
-  background-image:url("./images/naruto.jpg");
+  background-image:url("./images/naruto-uzumaki-contemplation-desktop-wallpaper-preview.jpg");
   background-size:cover; background-position:center; background-repeat:no-repeat;
 
   min-height:100vh;      
